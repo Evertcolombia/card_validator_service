@@ -18,7 +18,7 @@ and will be run on 0.0.0.0:8000
 ## Structure
 In a RESTful API, endpoints (URLs) define the structure of the API and how end users access data from our application using the HTTP methods - GET, POST, PUT, DELETE. Endpoints should be logically organized around _collections_ and _elements_, both of which are resources.
 
-In our case, we have one single resource, `cards`, so we will use the following URLS - `/cards/` and `/cards/<card_num>` for collections and elements, respectively:
+In our case, we have one single resource, `cards`, so we will use the following URLS - `/cards/`
 
 Endpoint |HTTP Method | CRUD Method | Result
 -- | -- |-- |--
@@ -32,11 +32,11 @@ There are the docs based in openApi and swagger, where you can test the endpoint
 - openAPi: http://127.0.0.1:8000/cards/
 - swagger: http://127.0.0.1:8000/docs/
 
-    in swagger you muts pass a dictionary as parameter if want to use the POST endpoints instead
+    in swagger you muts pass a dictionary as parameter if want to use the POST endpoints
     example:
 
         {
-        "card_num": "6799990100000000019",
+            "card_num": "6799990100000000019",
         }
 
 Also. We can test the API using [curl](https://curl.haxx.se/) 
